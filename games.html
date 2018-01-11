@@ -273,14 +273,14 @@ li.nav-item .btn-white {
         canvas.addEventListener('mousedown',handleMouseClick);
     }
     
-    function computerMovement2() {
-        var paddle1YCenter = paddle1Y + (PADDLE_HEIGHT/2);
-        if(paddle1Y < ballY-35){
-            paddle1Y += 30;
-        }else if(paddle1Y > ballY+35){
-            paddle1Y -= 30;
-        }
-    }
+    // function computerMovement2() {
+    //     var paddle1YCenter = paddle1Y + (PADDLE_HEIGHT/2);
+    //     if(paddle1Y < ballY-35){
+    //         paddle1Y += 30;
+    //     }else if(paddle1Y > ballY+35){
+    //         paddle1Y -= 30;
+    //     }
+    // }
     
     function computerMovement() {
         var paddle2YCenter = paddle2Y + (PADDLE_HEIGHT/2);
@@ -296,7 +296,7 @@ li.nav-item .btn-white {
             return;
         }
         computerMovement();
-        computerMovement2();
+        // computerMovement2();
         ballX += ballSpeedX;
         ballY += ballSpeedY;
         if(ballX <= 0) {
