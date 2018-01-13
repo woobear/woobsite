@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style CSS>
+    body {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #46484a; 
+  margin-bottom:50px;
+  }
+
+a {
+  color: #59a0d7; }
+
+h1 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 600; }
+
+h2 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 500; }
+
+h3 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 500; }
+
+h4 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+p {
+  color: #696b6e;
+  font-size: .9rem; }
+
+.divider {
+  display: block;
+  width: 6rem;
+  height: 0.3rem;
+  background-color: #dfe1e5;
+  margin: 2rem auto; }
+  
+.navbar-trans {
+  background: transparent; }
+
+a.navbar-brand, a.logo {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff !important;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0; }
+
+a.logo:hover, a.logo:active, a.logo:focus {
+  text-decoration: none; }
+
+li.nav-item .btn {
+  margin-top: .2rem;
+  margin-left: .4rem; }
+li.nav-item .btn-white {
+  color: #46484a; }
+
+.cover {
+  background: #2b2d34 url(images/nighttime.jpg) center;
+  background-size: cover;
+  min-height: 50rem;
+  height: auto;
+  border-radius: 0;
+  width: 100%;
+  height:100%;
+  color: #fff;
+  padding-top: 1rem; }
+  
+  .cover h1 {
+    font-weight: 200; }
+  
+  .cover p.lead {
+    margin: 2rem auto;
+    color: rgba(255, 255, 255, 0.75); }
+  
+  .cover .cover-container {
+    display: table;
+    height: 100%;
+    min-height: 44rem;
+    margin: 0 auto; }
+    
+    .btn-primary, .btn-outline-primary, .btn-secondary, .btn-outline-secondary, .btn-white, .btn-outline-white, .btn-success, .btn-outline-success, .btn-info, .btn-outline-info, .btn-warning, .btn-outline-warning, .btn-danger, .btn-outline-danger {
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: .3rem; }
+
+.btn-outline-primary, .btn-outline-secondary, .btn-outline-white, .btn-outline-success, .btn-outline-info, .btn-outline-warning, .btn-outline-danger {
+  border-width: 0.15rem; }
+
+.btn-lg {
+  padding: 1.1rem 2.5rem;
+  font-size: .9rem; }
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #59a0d7;
+  border-color: #59a0d7; }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #4089c1;
+  border-color: #4089c1; }
+
+.btn-outline-primary, .btn-outline-primary:visited {
+  color: #59a0d7;
+  border-color: #59a0d7;
+  background: none; }
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+  background-color: #59a0d7;
+  border-color: #59a0d7;
+  color: #fff; }
+
+.btn-secondary {
+  border-color: #696b6e;
+  background-color: #696b6e;
+  color: #fff; }
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  border-color: #46484a;
+  background-color: #46484a;
+  color: #fff; }
+
+.btn-outline-secondary, .btn-outline-secondary:visited {
+  color: #696b6e;
+  border-color: #696b6e;
+  background: none; }
+
+.btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:active {
+  border-color: #696b6e;
+  background: #696b6e;
+  color: #fff; }
+
+.btn-white {
+  border-color: #fff;
+  background-color: #fff;
+  color: #46484a; }
+
+.btn-white:hover, .btn-white:focus, .btn-white:active {
+  border-color: #dfe1e5;
+  background-color: #dfe1e5;
+  color: #46484a; }
+
+.btn-outline-white, .btn-outline-white:visited {
+  background: none;
+  color: #fff;
+  border-color: #fff; }
+
+.btn-outline-white:hover, .btn-outline-white:focus, .btn-outline-white:active {
+  color: #46484a;
+  background: #fff; }
+
+.link-white, link-white:visited {
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: .3rem;
+  border: 0;
+  color: #fff; }
+
+.link-white:hover, .link-white:focus, .link-white:active {
+  color: #dfe1e5 !important; }
+
+  .footer {
+  position: absolute;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: black;
+  bottom:0;
+}
+
+
+</style>
+<body class="cover">
+  <section class="text-center">
+      <nav class="navbar navbar-toggleable-sm navbar-trans navbar-inverse">
+          <div class="container">
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler-1" aria-controls="navbarToggler-1" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand pull-xs-right" style="color:black" href="#">
+                      <img src="images/Logo.png" style="margin-top:-10px"width="80" height="80"class="d-inline-block align-top" alt="">Rob Wooner</a>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarToggler-1">
+                  <ul class="navbar-nav mt-2 mt-md-0">
+                      <li class="nav-item">
+                          <a class="btn btn-outline-white btn-outline" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="btn btn-outline-white btn-outline" href="portfolio.html">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="btn btn-outline-white btn-outline" href="games.html">Games</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </section>
+    <footer class="footer">   
+        <div class="text-center">
+            <a class="btn btn-outline" href="https://github.com/woobear"><i class="fa fa-github color-github"></i></a>
+            <a class="btn btn-outline" href="https://www.facebook.com/rob.wooner"><i class="fa fa-facebook color-facebook"></i></a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/robert-wooner-0015bbb4"><i class="fa fa-linkedin color-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
