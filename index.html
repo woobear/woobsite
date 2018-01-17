@@ -62,9 +62,9 @@ a.navbar-brand, a.logo {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff !important;
   font-size: 2rem;
-  font-weight: bold;
-  margin-top: 0; }
-
+  margin-top: 0; 
+  resize:horizontal;
+}
 a.logo:hover, a.logo:active, a.logo:focus {
   text-decoration: none; }
 
@@ -193,12 +193,12 @@ li.nav-item .btn-white {
 <body class="cover">
   <section class="text-center">
       <nav class="navbar navbar-toggleable-sm navbar-trans navbar-inverse">
-          <div class="container resize:both; overflow:auto;">
+          <div class="container ">
               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler-1" aria-controls="navbarToggler-1" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
-              <a class="navbar-brand  justify-content-start" style="color:black; font-size:4vw 4vh; " href="#">
-                      <img src="images/Logo.png" style="margin-top:-10px;" width="80" height="80" class="d-inline-block align-top" alt="">Rob Wooner</a>
+              <a class="navbar-brand" style="color:black;" href="#">
+                      <img src="images/Logo.png" style="margin-top:-10px;" width="70" height="70" class="d-inline-block align" alt="">Rob Wooner</a>
               <div class="collapse navbar-collapse justify-content-end" id="navbarToggler-1">
                   <ul class="navbar-nav mt-2 mt-md-0">
                       <li class="nav-item">
@@ -215,10 +215,10 @@ li.nav-item .btn-white {
           </div>
       </nav>
   </section>
-        <div class="container form-inline justify-content-center" style="margin-top:10%; resize:both; overflow:auto;">
-            <form action="http://www.google.com/search" style="resize:both; overflow:auto" class="searchform;" method="get" name="searchform" target="_blank">
-                <input autocomplete="on" size="100%" class="form-controls search" name="q" placeholder="Search" required="required"  type="text">
-                <button class="btn btn-outline-white btn-outline" type="submit">Search</button>
+        <div class="container form-inline justify-content-center" style="margin-top:10%;">
+            <form action="http://www.google.com/search" style="resize:both; overflow:auto;" class="searchform;" method="get" name="searchform" target="_blank">
+              <input autocomplete="on" size="110%" class="form-controls search" name="q" placeholder="Search" required="required"  type="text">
+              <button class="btn btn-outline-white btn-outline" type="submit">Search</button>
             </form>
         </div>
         <br>
